@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h5{
+    border-radius: 8px;
+    padding: 4px 10px;
+    width:fit-content;
+   } /* Desktop Header Styles */
+  #desktop-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: white;
+   
+  }
+  
+  #logo {
+    order: 1;
+  }
+  
+  #user-info {
+    order: 3;
+    display: flex;
+    align-items: center;
+  }
+  
+  #profile-image {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  #user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  /* Mobile Header Styles */
+  #mobile-header {
+    display: none;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    margin-bottom: 25px;
+  }
+  
+  
+  #burger-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(112, 88, 88);
+    display: none;
+    z-index: 1;
+  }
+  
+  #burger-icon {
+    order: 3;
+    cursor: pointer;
+    margin-right: 10px;
+  
+  }
+  
+  #mobile-menu {
+    display: none;
+  }
+  .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+
+  }
+  .rating h6{
+    color: gray;
+    font-size: xx-small;
+  }
+  .center p {
+    font-size: xx-small;
+    color: gray;
+  }
+.rating  {
+  display: flex;
+  flex-direction: row;
+}
+ 
+ 
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .icon-container img {
+    width: 35px;
+    
+  }
+  
+  
+  .icon-container p {
+   
+    width: 70px; /* Set your desired fixed width */
+    white-space: normal; /* Allow text to wrap */
+    overflow: hidden;
+    font-size:x-small;
+    text-align: center;
+    font-weight: bold;
+  }
+  .custom-icon-container {
+    height: auto;
+    align-items: center;
+    background-color: white;
+    padding: 0px 8px 0px 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust column width as needed */
+    grid-gap: 20px; 
+  
+  }
+  
+  
+  .video-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* Media query for mobile view */
+  .video-container video {
+   margin-left: 25%;
+    width: 40%;
+  }
+  .video-container p {
+    margin: 40px;
+    margin-bottom: 0px;
+  }
+  .search{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+  }
+  .search input {
+    width: 70%;
+    height: 20px;
+    border: 1px groove gainsboro;
+    border-radius: 10px;
+    
+  }
+  .search button{
+    background-color: dodgerblue;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 5px;
+    inline-size: 35px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .search{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+    .search input {
+      width: 70%;
+      height: 20px;
+      border: 1px groove gainsboro;
+      border-radius: 10px;
+      
+    }
+    .search button{
+      background-color: dodgerblue;
+      border-radius: 10px;
+      border: none;
+      color: white;
+      padding: 5px;
+      inline-size: 35px;
+    }
+    .video-container{
+      justify-content: center;
+      font-size:x-small;
+      color: gray;
+
+    }
+    .video-container video{
+      margin-left: 36px;
+      width: 80%; /* Adjust the video width to fit the container */
+      height: auto;   
+      }
+     
+    .custom-icon-container {
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Adjust column width for smaller screens */
+    }
+    #desktop-header {
+      display: none;
+    }
+    
+  
+    #mobile-header {
+      display: flex;
+    }
+  
+    #burger-icon {
+      order: 1;
+     
+    }
+  
+    
+     
+      
+      
+  }
+  
+  /* Common Styles */
+  #user-email {
+    font-size: 12px;
+    color: #ccc;
+  }
+
+  
+
+  
+  
